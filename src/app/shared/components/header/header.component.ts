@@ -16,22 +16,22 @@ export class HeaderComponent implements OnInit {
   }
 
   goHome() {
-    this.router.navigateByUrl('home')
+    this.router.navigateByUrl('app/home')
   }
 
   goLogin() {
-    this.router.navigateByUrl('login')
+    this.router.navigateByUrl('auth/login')
   }
 
   goData(){
-    this.router.navigateByUrl('data')
+    this.router.navigateByUrl('app/data')
   }
 
   goMap(){
-    this.router.navigateByUrl('map')
+    this.router.navigateByUrl('app/map')
   }
 
   goReports(){
-    this.router.navigateByUrl('reports')
+    this.router.navigateByUrl('app/reports')
   }
 }

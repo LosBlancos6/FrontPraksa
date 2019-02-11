@@ -4,9 +4,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
-    declarations: [],
+    declarations: [
+        HeaderComponent,
+        FooterComponent,
+    ],
     imports:[
         CommonModule,
         MatToolbarModule,
@@ -20,6 +26,8 @@ import { CommonModule } from '@angular/common';
         MatButtonModule,
         MatFormFieldModule,
         MatInputModule,
+        HeaderComponent,
+        FooterComponent,
     ]
 })
 export class SharedModule {
