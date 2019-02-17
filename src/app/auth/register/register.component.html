@@ -1,1 +1,19 @@
-<p>radi</p>
+<div class="example-container" [formGroup]="loginForm">
+    <h2>Registracija</h2>
+    <mat-form-field>
+      <input matInput placeholder="name" formControlName="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="surrname" formControlName="surrname">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="username" formControlName="username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="password" formControlName="password">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="address" formControlName="address">
+      </mat-form-field>
+    <button mat-button (click)="onRegister()" [disabled]="!loginForm.valid"><strong>Registruj se</strong></button>
+  </div>

@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,6 +22,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
         MatButtonModule,
         MatFormFieldModule,
         MatInputModule,
+        FormsModule,
+        ReactiveFormsModule,
     ],
     exports: [
         CommonModule,
@@ -30,6 +33,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
         MatInputModule,
         HeaderComponent,
         FooterComponent,
+        FormsModule,
+        ReactiveFormsModule,
     ]
 })
 export class SharedModule {
